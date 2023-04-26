@@ -1,1 +1,8 @@
-<app-list header="Vegetables" [items]="items"></app-list>
+<app-list 
+    header="Vegetables" [items]="items" 
+    (itemSelected)="selectedItemPrice = $event.price">
+</app-list>
+<app-vegetable-details 
+    *ngIf="selectedItemPrice"
+    [currentPrice]="selectedItemPrice">
+</app-vegetable-details>

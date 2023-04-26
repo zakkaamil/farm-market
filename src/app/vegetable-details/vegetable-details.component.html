@@ -1,0 +1,10 @@
+<div>
+    <span>Selected item price: </span>
+    <span 
+        class="price"
+        [ngStyle]="{
+            'color': currentPrice < 10 ? 'green' : 'red'
+        }">
+        {{ currentPrice }}$
+    </span>
+</div>

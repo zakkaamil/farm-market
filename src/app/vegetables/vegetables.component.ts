@@ -14,7 +14,8 @@ export class VegetablesComponent {
         Solanum lycopersicum, commonly known as the tomato plant. 
         The species originated in western South America, Mexico, 
         and Central America.`,
-      isActive: true
+      isActive: true,
+      price: 15
     },
     {
       name: 'Potato',
@@ -24,7 +25,9 @@ export class VegetablesComponent {
     {
       name: 'Carrot',
       description: 'The carrot is a root vegetable.',
-      isActive: true
+      isActive: true,
+      price: 8
     }
   ];
+  selectedItemPrice?: number;
 }

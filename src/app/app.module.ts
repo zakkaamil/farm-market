@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ListComponent } from './common/list/list.component';
 import { ListItemComponent } from './common/list-item/list-item.component';
 import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
+import { VegetableDetailsComponent } from './vegetable-details/vegetable-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
     HomeComponent,
     ListComponent,
     ListItemComponent,
-    FruitDetailsComponent
+    FruitDetailsComponent,
+    VegetableDetailsComponent
   ],
   imports: [
     BrowserModule,
