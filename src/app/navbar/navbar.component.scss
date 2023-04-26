@@ -2,8 +2,14 @@ nav {
     display: flex;
     border-bottom: 1px solid lightgray;
     padding: 16px;
+    justify-content: space-between;
 }
 
 .brand {
     font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation-item {
+    margin-left: 8px;
 }
