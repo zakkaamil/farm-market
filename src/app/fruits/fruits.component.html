@@ -1,1 +1,6 @@
-<app-list header="Fruits" [items]="items"></app-list>
+<app-list 
+    header="Fruits" 
+    [items]="items" 
+    (itemSelected)="currentImageUrl = $event.imageUrl">
+</app-list>
+<app-fruit-details *ngIf="currentImageUrl" [imageUrl]="currentImageUrl"></app-fruit-details>

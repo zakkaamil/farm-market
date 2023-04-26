@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Item } from 'src/app/models/item.interface';
 
 @Component({
@@ -8,4 +8,9 @@ import { Item } from 'src/app/models/item.interface';
 })
 export class ListItemComponent {
   @Input() item: Item;
+  @Output() itemSelected: EventEmitter<Item> = new EventEmitter();
+
+  onItemNameClick(): void {
+    this.itemSelected.emit(this.item);
+  }
 }

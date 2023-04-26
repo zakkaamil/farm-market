@@ -4,6 +4,10 @@
     &__name {
         margin-bottom: 0;
         color: royalblue;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__description {

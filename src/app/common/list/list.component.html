@@ -2,6 +2,10 @@
 
 <ul class="list-items">
     <ng-container *ngFor="let item of items">
-        <app-list-item *ngIf="item.isActive" [item]="item"></app-list-item>
+        <app-list-item 
+            *ngIf="item.isActive" 
+            [item]="item"
+            (itemSelected)="onListItemSelected($event)">
+        </app-list-item>
     </ng-container>
 </ul>
